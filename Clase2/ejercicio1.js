@@ -1,3 +1,5 @@
+// Película Favorita
+
 var usuario = {
     nombre: "Cesar",
     peliculasFavoritas: [
@@ -17,9 +19,6 @@ var usuario = {
 };
 
 const btn1 = document.querySelector('#btn1');
-btn1.addEventListener('click', function(event) {
-    console.log(usuario.peliculasFavoritas[1].titulo);
+btn1.addEventListener('click', function (event) {
+    console.log("El título de la segunda película es: " + usuario.peliculasFavoritas[1].titulo);
 });
-
-// console.log(usuario.peliculasFavoritas[1].titulo);
-
