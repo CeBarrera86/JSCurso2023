@@ -30,6 +30,6 @@ btn2.addEventListener('click', function (event) {
         email: 'mili@mili.com',
     });
 
-    // Muestro elementos totales después de modificar la lista
+    // Muestro elementos totales lista modificada
     console.log("Cantidad de elementos en la lista de contactos modificada: " + contactos.length);
 });
