@@ -3,15 +3,15 @@
 var clase = [
     {
         nombre: 'Santino',
-        calificacion: [6, 7, 8],
+        calificacion: [6, 7, 8 ,9, 7],
     },
     {
         nombre: 'Clemente',
-        calificacion: [7, 8, 9],
+        calificacion: [7, 8, 9, 6, 6],
     },
     {
         nombre: 'Alma',
-        calificacion: [8, 9, 10],
+        calificacion: [8, 9, 10, 10, 6],
     },
 ];
 
@@ -26,7 +26,7 @@ function calcularPromedio(array) {
 };
 
 const btn4 = document.querySelector('#btn4');
-btn4.addEventListener('click', function (event) {
+btn4.addEventListener('click', function () {
     clase.forEach(element => {
         console.log("Nombre: " + element.nombre + ", Promedio: " + calcularPromedio(element.calificacion));
     });

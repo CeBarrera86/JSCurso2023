@@ -1,4 +1,4 @@
-// Contacto
+// Tienda en Línea
 
 var producto = {
     nombre: 'Camiseta Argentina Adidas Original',
@@ -7,14 +7,12 @@ var producto = {
     disponible: 'en Stock',
 
     mostrarProducto: function () {
-        console.log("Nombre: " + producto.nombre);
-        console.log("Descripción: " + producto.descripcion);
-        console.log("Precio: " + producto.precio);
-        console.log("Disponibilidad: " + producto.disponible);
+        return this;
     },
 };
 
 const btn3 = document.querySelector('#btn3');
-btn3.addEventListener('click', function (event) {
-    producto.mostrarProducto();
+btn3.addEventListener('click', function () {
+    datos = producto.mostrarProducto();
+    console.log("Nombre: " + datos.nombre + '\n' + "Descripción: " + datos.descripcion + '\n' + "Precio: " + datos.precio + '\n' + "Disponibilidad: " + datos.disponible);
 });

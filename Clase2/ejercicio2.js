@@ -1,4 +1,4 @@
-// Contacto
+// Gestor de Contactos
 
 var contactos = [
     {
@@ -19,7 +19,7 @@ var contactos = [
 ];
 
 const btn2 = document.querySelector('#btn2');
-btn2.addEventListener('click', function (event) {
+btn2.addEventListener('click', function () {
     // Muestro elementos toales lista original
     console.log("Cantidad de elementos en la lista de contactos originales: " + contactos.length);
 
@@ -32,4 +32,6 @@ btn2.addEventListener('click', function (event) {
 
     // Muestro elementos totales lista modificada
     console.log("Cantidad de elementos en la lista de contactos modificada: " + contactos.length);
+    // Muestro el nuevo array de contactos
+    console.log(contactos);
 });

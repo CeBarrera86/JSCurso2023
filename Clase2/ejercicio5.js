@@ -35,6 +35,6 @@ function masJoven(array) {
 
 // Muestra el nombre del amigo más joven
 const btn5 = document.querySelector('#btn5');
-btn5.addEventListener('click', function (event) {
+btn5.addEventListener('click', function () {
     console.log("El nombre es: " + masJoven(perfil.amigos));
 });
