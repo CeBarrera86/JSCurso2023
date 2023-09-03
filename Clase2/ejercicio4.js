@@ -3,7 +3,7 @@
 var clase = [
     {
         nombre: 'Santino',
-        calificacion: [6, 7, 8 ,9, 7],
+        calificacion: [6, 7, 8, 9, 7],
     },
     {
         nombre: 'Clemente',
@@ -18,10 +18,13 @@ var clase = [
 // Función para calcular el promedio con Array como parámetro
 function calcularPromedio(array) {
     var suma = 0;
-    for (let element of array) {
-        suma += element;
+    let promedio = 0
+    if (array != undefined && array != '') {
+        for (let element of array) {
+            suma += element;
+        }
+        promedio = suma / array.length;
     }
-    var promedio = suma / array.length;
     return promedio;
 };
 
