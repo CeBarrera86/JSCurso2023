@@ -37,6 +37,9 @@
 					<label for="total">Monto:</label>
 					<span id="total"></span>
 				</div>
+				<div id="vaciar" class="block_aside" style="display: none;">
+					<button class="button" onclick="vaciarCarrito()">Vaciar carrito</button>
+				</div>
 			</aside>
 
 			<!-- CONTENIDO CENTRAL -->
@@ -47,42 +50,42 @@
 					<p class="nombre">Manzanas</p>
 					<p class="precio">500</p>
 					<p class="caducidad">Fecha de Caducidad: 01/10/2023</p>
-					<button class="button" onclick="agregarAlCarrito(0)">Agregar al carrito</button>
+					<button class="button" data-id="0" data-tipo="alimenticio" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 				<div class="product alimenticio" id="producto_1">
 					<img src="img/leche.jpeg" alt="leche">
 					<p class="nombre">Leche</p>
 					<p class="precio">300</p>
 					<p class="caducidad">Fecha de Caducidad: 01/12/2023</p>
-					<button class="button" onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+					<button class="button" data-id="1" data-tipo="alimenticio" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 				<div class="product alimenticio" id="producto_2">
 					<img src="img/aceite.jpeg" alt="aceite">
 					<p class="nombre">Aceite</p>
 					<p class="precio">400</p>
 					<p class="caducidad">Fecha de Caducidad: 01/04/2024</p>
-					<button class="button" onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+					<button class="button" data-id="2" data-tipo="alimenticio" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 				<div class="product electronico" id="producto_3">
 					<img src="img/laptop.jpg" alt="Laptop">
 					<p class="nombre">Laptop</p>
 					<p class="precio">750000</p>
 					<p class="potencia">Potencia: 25W</p>
-					<button class="button" onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+					<button class="button" data-id="3" data-tipo="electronico" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 				<div class="product electronico" id="producto_4">
 					<img src="img/televisor.jpeg" alt="televisor">
 					<p class="nombre">Televisor</p>
 					<p class="precio">150000</p>
 					<p class="potencia">Potencia: 180W</p>
-					<button class="button" onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+					<button class="button" data-id="4" data-tipo="electronico" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 				<div class="product electronico" id="producto_5">
 					<img src="img/celular.jpeg" alt="Celular">
 					<p class="nombre">Celular</p>
 					<p class="precio">1400000</p>
 					<p class="potencia">Potencia: 2W</p>
-					<button class="button" onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+					<button class="button" data-id="5" data-tipo="electronico" onclick="agregarAlCarrito(this)">Agregar al carrito</button>
 				</div>
 			</div>
 		</div>
